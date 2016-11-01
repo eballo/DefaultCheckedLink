@@ -3,7 +3,7 @@
 
  Plugin Name: Default New Window Link Opener
  Plugin URI: https://github.com/eballo
- Description: Plugin that allow you to enable the check in the popup "Insert/Edit Link” to open link in new window by default
+ Description: Plugin that allow you to enable the check in the popup "Insert/Edit Link” to open a link in new window by default
  Version: 1.0
  Author: eballo
 
