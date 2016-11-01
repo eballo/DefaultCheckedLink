@@ -1,12 +1,19 @@
 <?php
 /*
-Plugin Name: Default Checked Link
-Plugin URI: 
-Description: Default checked link when we are adding a new link in a post
-Version: 1.0
-Author: eballo
+
+ Plugin Name: Default new window link opener
+ Plugin URI: 
+ Description: Plugin that allow you to enable the check in the popup "Insert/Edit Link” to open link in new window by default
+ Version: 1.0
+ Author: eballo
+
+This plugin is based on the solution made by Jan Fabry and lewayotte in the the following link http://wordpress.stackexchange.com/questions/7785/is-there-any-way-to-set-default-for-insert-edit-link-to-open-link-in-new-wind
+
 */
 
+/**
+ * Sets "Open link in a new window/tab" to checked by default
+ */
 function wplink_tiny_mce_init()
 {
  ?>
