@@ -2,13 +2,22 @@
 /*
 Plugin Name: Default Checked Link
 Plugin URI: 
-Description: Default checked link checked
+Description: Default checked link when we are adding a new link in a post
 Version: 1.0
 Author: eballo
 */
-add_filter( 'tiny_mce_before_init', 'defaultCheckedLink_tiny_mce_before_init' );
-function defaultCheckedLink_tiny_mce_before_init( $initArray )
+
+function wplink_tiny_mce_init()
 {
-    $initArray['default_link_checked'] = plugins_url( 'js/default-checked-link-01.js', __FILE__ );
-    return $initArray;
+ ?>
+    <script type="text/javascript">
+        jQuery(function () {
+           jQuery('input#wp-link-target').prop('checked',true);
+        });
+    </script>    
+    <?php
 }
+
+add_action( 'before_wp_tiny_mce', 'wplink_tiny_mce_init' );
+
+?>
